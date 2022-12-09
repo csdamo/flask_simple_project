@@ -29,15 +29,24 @@ def get_params():
 
 def get_config_whatsapp():
     """_summary_: Get whatsapp settings"""
-
-    try:
-        f = open('whatsapp/config_whatsapp.json',)
-        config = json.load(f)
-    except:
-        config = None
-        exit()
-    finally:
-        f.close()
+    config = {
+        "WHATSAPP_API_TOKEN":"EAAL4ohZAnVEcBALNjKtrRb1PSC9NmcH1Iyu5SrWkuTGJaHUumSiWKD7lHJZAZBKlrypwWRXTwxZAZBTmqBwBiixoj76eOGCcb0BYvjxD907pYWscRKRLJZBRHt7CCyve9RQFUDGGghI6WeWYPN0qIKU6XZC4KwXtXMOqgHre1uNmepBmyFZBk9NBGv71G5CzGsWnpQSbWK9EAgZDZD",
+        "PHONE_NUMBER_ID":"104006922529786",
+        "API_URL": "https://graph.facebook.com",
+        "VERSION": "v15.0",
+        "VERIFY_TOKEN": "cNKWykYjL71kOnZfWPAJNTFPB3HhruZQ",
+        "TEMPLATE": "saudacao",
+        "TEMPLATE_LANGUAGE": "pt_BR",
+        "PHONE_NUMBER_TO": "5554991984793"
+    }
+    # try:
+    #     f = open('whatsapp/config_whatsapp.json',)
+    #     config = json.load(f)
+    # except:
+    #     config = None
+    #     exit()
+    # finally:
+    #     f.close()
     
     return config
 
